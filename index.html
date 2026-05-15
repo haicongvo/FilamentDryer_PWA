@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Filament Dryer Notifications</title>
+
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "YOUR_ONESIGNAL_APP_ID",
+      });
+
+      console.log("OneSignal Ready");
+    });
+  </script>
+</head>
+
+<body>
+  <h1>Filament Dryer Notifications</h1>
+  <p>PWA Notification Ready</p>
+</body>
+</html>
